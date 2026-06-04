@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table 3 — Measured Variables</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f5f4ef;
+      color: #1a1a18;
+      padding: 48px 24px 80px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 40px;
+      border-left: 4px solid #3a7d5c;
+      padding-left: 20px;
+    }
+
+    header .label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #3a7d5c;
+      margin-bottom: 8px;
+    }
+
+    header h1 {
+      font-family: 'Source Serif 4', serif;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 1.3;
+      color: #1a1a18;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #666;
+      font-weight: 300;
+      line-height: 1.6;
+      max-width: 680px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 13.5px;
+    }
+
+    thead tr {
+      background: #1a2e25;
+      color: #fff;
+    }
+
+    thead th {
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 11.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #ece9e0;
+      transition: background 0.15s;
+    }
+
+    tbody tr:hover {
+      background: #f0f7f3;
+    }
+
+    /* Category rows */
+    tr.category-row td {
+      background: #eaf2ec;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #2d5e42;
+      padding: 10px 16px;
+      border-bottom: none;
+    }
+
+    tbody td {
+      padding: 12px 16px;
+      vertical-align: top;
+      line-height: 1.55;
+      color: #2a2a28;
+    }
+
+    tbody td:first-child {
+      font-weight: 500;
+      color: #1a1a18;
+      white-space: nowrap;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .badge-categorical { background: #ddeee5; color: #2d5e42; }
+    .badge-continuous  { background: #dde8f5; color: #1d3f6e; }
+    .badge-binary      { background: #f5e8dd; color: #6e3d1d; }
+
+    footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #999;
+      font-style: italic;
+      padding-left: 4px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="label">Living Waters — Bachelor Research · Romain Stofferis, 2026</div>
+    <h1>Table 3. Data Collection Framework</h1>
+    <p>Morphological, ecological, hydrological, and landscape context variables collected across 13 NVO sites in the Hoogheemraadschap van Delfland management area, including their definition, measurement method, and data type.</p>
+  </header>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:14%">Variable</th>
+          <th style="width:28%">Definition</th>
+          <th style="width:28%">Method</th>
+          <th style="width:16%">Data type</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- MORPHOLOGY -->
+        <tr class="category-row"><td colspan="4">Morphology</td></tr>
+        <tr>
+          <td>Bank type</td>
+          <td>NVO subtype classification (e.g., gently sloping, shallow water bench, wet bank, and forebank)</td>
+          <td>Visual classification</td>
+          <td><span class="badge badge-categorical">Categorical</span></td>
+        </tr>
+        <tr>
+          <td>Bank profile type</td>
+          <td>Bank morphology classified as gentle slope, steep slope, or stepped profile</td>
+          <td>Field-based visual classification</td>
+          <td><span class="badge badge-categorical">Categorical</span></td>
+        </tr>
+        <tr>
+          <td>Bank slope</td>
+          <td>Slope ratio measured as horizontal distance to vertical height difference for gentle slopes only</td>
+          <td>Tape measure, marked stick</td>
+          <td><span class="badge badge-continuous">Continuous (ratio)</span></td>
+        </tr>
+        <tr>
+          <td>Substrate thickness</td>
+          <td>Thickness of the soft sediment layer at the bottom of the channel, measured in aquatic and amphibian zones</td>
+          <td>Marked rake (penetration difference method)</td>
+          <td><span class="badge badge-continuous">Continuous (cm)</span></td>
+        </tr>
+        <tr>
+          <td>Water depth</td>
+          <td>Maximum water depth in the amphibious and aquatic zones</td>
+          <td>Marked rake at zone boundary and channel centre</td>
+          <td><span class="badge badge-continuous">Continuous (cm)</span></td>
+        </tr>
+        <tr>
+          <td>Channel width</td>
+          <td>Distance between both banks at the water surface</td>
+          <td>Google Earth Pro and field verification with tape measure</td>
+          <td><span class="badge badge-continuous">Continuous (m)</span></td>
+        </tr>
+        <tr>
+          <td>Aquatic zone width</td>
+          <td>Width of the permanently submerged part of the waterway, from the end of one amphibian zone to the start of the other</td>
+          <td>Tape measure</td>
+          <td><span class="badge badge-continuous">Continuous (m)</span></td>
+        </tr>
+        <tr>
+          <td>Amphibian zone width</td>
+          <td>Width of the shallow transition zone between water and land</td>
+          <td>Tape measure</td>
+          <td><span class="badge badge-continuous">Continuous (m)</span></td>
+        </tr>
+        <tr>
+          <td>Terrestrial zone width</td>
+          <td>Width of the vegetated zone above the high-water line</td>
+          <td>Tape measure</td>
+          <td><span class="badge badge-continuous">Continuous (m)</span></td>
+        </tr>
+
+        <!-- LANDSCAPE CONTEXT -->
+        <tr class="category-row"><td colspan="4">Landscape Context</td></tr>
+        <tr>
+          <td>Surrounding land use</td>
+          <td>Dominant land use type within the area around the NVO: agricultural pasture, unimproved grassland, or semi-natural</td>
+          <td>Visual field classification</td>
+          <td><span class="badge badge-categorical">Categorical</span></td>
+        </tr>
+
+        <!-- ECOLOGY -->
+        <tr class="category-row"><td colspan="4">Ecology</td></tr>
+        <tr>
+          <td>Amphibian vegetation occurrence</td>
+          <td>Unique emergent macrophyte species recorded in each 1 m × 1 m quadrat replicate at each perpendicular transect in the amphibian zone</td>
+          <td>1 m × 1 m quadrat (n = 1 replicate per location)</td>
+          <td><span class="badge badge-categorical">Categorical (species names)</span></td>
+        </tr>
+        <tr>
+          <td>Aquatic macrophyte occurrence</td>
+          <td>Unique macrophyte species recorded from rake toss and dipnet sweep replicates within the aquatic zone</td>
+          <td>Rake toss (n = 3) and dipnet sweep (n = 3) per location; species summed to determine total richness</td>
+          <td><span class="badge badge-categorical">Categorical (species names)</span></td>
+        </tr>
+
+        <!-- HYDROLOGY -->
+        <tr class="category-row"><td colspan="4">Hydrology</td></tr>
+        <tr>
+          <td>Light penetration</td>
+          <td>Depth at which the Secchi disc is no longer visible</td>
+          <td>Secchi disc attached to marked line</td>
+          <td><span class="badge badge-continuous">Continuous (cm)</span></td>
+        </tr>
+        <tr>
+          <td>Bottom visibility</td>
+          <td>Visual assessment of whether the bottom was visible before physically disturbing the substrate</td>
+          <td>Visual observation from shore</td>
+          <td><span class="badge badge-binary">Binary (0/1)</span></td>
+        </tr>
+        <tr>
+          <td>Total nitrogen (N)</td>
+          <td>Dissolved total nitrogen in the water column</td>
+          <td>50 mL water sample, laboratory analysis</td>
+          <td><span class="badge badge-continuous">Continuous (mg/L)</span></td>
+        </tr>
+        <tr>
+          <td>Total phosphorus (P)</td>
+          <td>Dissolved phosphorus concentration in the water column</td>
+          <td>50 mL water sample, laboratory analysis</td>
+          <td><span class="badge badge-continuous">Continuous (mg/L)</span></td>
+        </tr>
+        <tr>
+          <td>Electrical conductivity (EC)</td>
+          <td>Conductivity of the water column</td>
+          <td>50 mL water sample, laboratory analysis</td>
+          <td><span class="badge badge-continuous">Continuous (µS/cm)</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <footer>Table 3. Data Collection Framework. Living Waters — Bachelor Research, Universiteit van Amsterdam, 2026.</footer>
+
+</div>
+</body>
+</html>
