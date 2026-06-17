@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table 1. Data Collection Variables</title>
+<style>
+  :root {
+    --border-color: #d0d7de;
+    --header-bg: #24333e;
+    --header-text: #ffffff;
+    --row-alt: #f6f8fa;
+    --category-bg: #e8edf2;
+    --text-color: #1f2328;
+    --link-color: #0969da;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.25rem;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  p.caption {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #57606a;
+    font-size: 0.95rem;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 760px;
+    font-size: 0.92rem;
+  }
+
+  caption {
+    text-align: left;
+  }
+
+  thead th {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    text-align: left;
+    padding: 0.65rem 0.85rem;
+    position: sticky;
+    top: 0;
+  }
+
+  tbody td {
+    padding: 0.6rem 0.85rem;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: var(--row-alt);
+  }
+
+  td.category {
+    background-color: var(--category-bg);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  td.variable {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  td.data-type {
+    white-space: nowrap;
+  }
+
+  footer {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #57606a;
+  }
+</style>
+</head>
+<body>
+
+<h1>Table 1. Morphological, ecological, hydrological, and landscape context variables used for data collection</h1>
+<p class="caption">This table includes their definition, measurement method, and data type.</p>
+
+<div class="table-wrapper">
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Variables</th>
+      <th>Definition</th>
+      <th>Method</th>
+      <th>Data type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="category" rowspan="8">Morphology</td>
+      <td class="variable">Bank type</td>
+      <td>NVO subtype classification (e.g., gently sloping, shallow water bench, wet bank, and forebank)</td>
+      <td>Visual classification</td>
+      <td class="data-type">Categorical</td>
+    </tr>
+    <tr>
+      <td class="variable">Bank profile type</td>
+      <td>Bank morphology is classified as gentle slope, steep slope, or stepped profile</td>
+      <td>Field-based visual classification</td>
+      <td class="data-type">Categorical</td>
+    </tr>
+    <tr>
+      <td class="variable">Bank slope</td>
+      <td>Slope ratio measured as horizontal distance (m) to vertical height difference (m)</td>
+      <td>Tape measure, marked stick</td>
+      <td class="data-type">Continuous (ratio); NA for other profiles</td>
+    </tr>
+    <tr>
+      <td class="variable">Substrate thickness in the aquatic and amphibian zone</td>
+      <td>Thickness of the soft sediment layer at the bottom of the channel</td>
+      <td>Marked rake (penetration difference method)</td>
+      <td class="data-type">Continuous (cm)</td>
+    </tr>
+    <tr>
+      <td class="variable">Water depth</td>
+      <td>Maximum water depth in the amphibious and aquatic zones</td>
+      <td>Marked rake at the zone boundary and channel centre</td>
+      <td class="data-type">Continuous (cm)</td>
+    </tr>
+    <tr>
+      <td class="variable">Water width</td>
+      <td>Distance between the two banks at the water surface</td>
+      <td>Tape measure, measuring from water line to water line across the channel</td>
+      <td class="data-type">Continuous (m)</td>
+    </tr>
+    <tr>
+      <td class="variable">Aquatic zone width</td>
+      <td>Width of the permanently submerged part of the waterway</td>
+      <td>Tape measure</td>
+      <td class="data-type">Continuous (m)</td>
+    </tr>
+    <tr>
+      <td class="variable">Amphibian zone width</td>
+      <td>Width of the shallow transition zone between water and land</td>
+      <td>Tape measure</td>
+      <td class="data-type">Continuous (m)</td>
+    </tr>
+    <tr>
+      <td class="category">Morphology</td>
+      <td class="variable">Terrestrial zone width</td>
+      <td>Width of the vegetated zone above the high-water line</td>
+      <td>Tape measure</td>
+      <td class="data-type">Continuous (m)</td>
+    </tr>
+    <tr>
+      <td class="category">Landscape context</td>
+      <td class="variable">Surrounding land use</td>
+      <td>Classified as agricultural pasture, unimproved grassland, or semi-natural</td>
+      <td>Visual field classification</td>
+      <td class="data-type">Categorical</td>
+    </tr>
+    <tr>
+      <td class="category" rowspan="2">Ecology</td>
+      <td class="variable">Amphibian species occurrence</td>
+      <td>Unique emergent macrophyte species were recorded in each 1 m x 1 m quadrat replicate at each perpendicular transect in the amphibian zone.</td>
+      <td>1m x 1m quadrat (n=1 replicates per location)</td>
+      <td class="data-type">Categorical (species names)</td>
+    </tr>
+    <tr>
+      <td class="variable">Aquatic macrophyte species occurrence</td>
+      <td>Unique macrophyte species recorded from rake-toss and dipnet-sweep replicates within the aquatic zone.</td>
+      <td>Rake toss (n= 3 replicates per location) and dipnet sweep (n=3 replicates per location); species recorded per replicate and summed to determine total richness per location</td>
+      <td class="data-type">Categorical (species names)</td>
+    </tr>
+    <tr>
+      <td class="category" rowspan="5">Hydrology</td>
+      <td class="variable">Light penetration</td>
+      <td>Depth at which the Secchi disc is no longer visible</td>
+      <td>Secchi disc attached to marked line</td>
+      <td class="data-type">Continuous (cm)</td>
+    </tr>
+    <tr>
+      <td class="variable">Bottom visibility</td>
+      <td>Visual assessment before physically disturbing the bottom substrate.</td>
+      <td>Visual observation from shore</td>
+      <td class="data-type">Binary (FALSE/TRUE)</td>
+    </tr>
+    <tr>
+      <td class="variable">Total nitrogen (N)</td>
+      <td>Dissolved total nitrogen in the water column</td>
+      <td>50 mL water sample, laboratory analysis</td>
+      <td class="data-type">Continuous (mg/L)</td>
+    </tr>
+    <tr>
+      <td class="variable">Total phosphorus (P)</td>
+      <td>Dissolved phosphorus concentration in the water column</td>
+      <td>50 mL water sample, laboratory analysis</td>
+      <td class="data-type">Continuous (mg/L)</td>
+    </tr>
+    <tr>
+      <td class="variable">Electrical conductivity (EC)</td>
+      <td>Measure of the ability to conduct an electrical current</td>
+      <td>50 mL water sample, laboratory analysis</td>
+      <td class="data-type">Continuous (mS/cm)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>
